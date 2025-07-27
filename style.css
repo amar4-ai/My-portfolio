@@ -68,13 +68,58 @@ nav ul li a:hover::after {
     width: 100%;
 
 }
-
 .header-text {
+  margin-top: 20%;
+  text-align: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header-text .role {
+  font-size: 60px;
+  letter-spacing: 2px;
+  color: #ff004f;
+  margin-bottom: 20px;
+  animation: fadeSlideIn 2s ease forwards;
+}
+
+#animated-heading {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: bold;
+  min-height: 100px;
+}
+
+#animated-heading span {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+  margin-right: 10px;
+  color: #fff;
+}
+
+#animated-heading span.visible {
+  opacity: 1;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* .header-text {
     color: white;
     margin-top: 20%;
     font-size: 30px;
 
 }
+
 
 .header-text h1 {
     font-size: 60px;
@@ -83,7 +128,8 @@ nav ul li a:hover::after {
 
 .header-text h1 span {
     color: #ff004f;
-}
+} */
+
 
 /* ----------about--------------- */
 #about {
